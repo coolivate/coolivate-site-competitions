@@ -44,10 +44,11 @@ function ThermalVideoOverlay() {
 
   return (
     <div className="max-w-3xl mx-auto px-4">
-      <div className="flex items-start gap-4">
+      {/* Stack vertically on mobile, side-by-side on md+ */}
+      <div className="flex flex-col md:flex-row items-start gap-4">
 
-        {/* Video — 70% width */}
-        <div className="relative" style={{ flex: '0 0 70%' }}>
+        {/* Video — full width on mobile, 70% on md+ */}
+        <div className="relative w-full md:flex-none" style={{ flex: '0 0 70%' }}>
           <video
             ref={videoRef}
             className="w-full rounded-2xl block"
@@ -93,15 +94,15 @@ function ThermalVideoOverlay() {
           </AnimatePresence>
         </div>
 
-        {/* Sidebar panel — 30% width, always in layout to prevent shift */}
-        <div className="relative" style={{ flex: '0 0 30%' }}>
+        {/* Specs panel — full width on mobile (below video), 30% on md+ */}
+        <div className="relative w-full md:flex-none" style={{ flex: '0 0 30%' }}>
           <AnimatePresence mode="wait">
             {activeData && (
               <motion.div
                 key={activeHotspot}
-                initial={{ opacity: 0, x: 12 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: 12 }}
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 8 }}
                 transition={{ duration: 0.22, ease: 'easeOut' }}
                 className="w-full rounded-2xl border border-slate/10 bg-white shadow-xl p-4 text-left"
               >
@@ -112,9 +113,9 @@ function ThermalVideoOverlay() {
                   {activeData.header}
                 </h4>
 
-                <div className="space-y-4 mb-4">
+                <div className="flex flex-row md:flex-col gap-6 md:gap-0 md:space-y-4 mb-4">
                   {activeData.metrics.map((m) => (
-                    <div key={m.label}>
+                    <div key={m.label} className="flex-1 md:flex-none">
                       <p className="text-[24px] font-black text-navy leading-none">{m.value}</p>
                       <p className="text-[11px] text-slate mt-0.5 leading-snug">{m.label}</p>
                     </div>
