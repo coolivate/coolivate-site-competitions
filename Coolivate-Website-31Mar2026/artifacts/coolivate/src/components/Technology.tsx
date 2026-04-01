@@ -45,7 +45,7 @@ function ThermalVideoOverlay() {
   return (
     <div className="max-w-3xl mx-auto px-4">
       {/* Stack vertically on mobile, side-by-side on md+ */}
-      <div className="flex flex-col md:flex-row items-start gap-4">
+      <div className="flex flex-col md:flex-row md:items-center gap-4">
 
         {/* Video — full width on mobile, 70% on md+ */}
         <div className="relative w-full md:flex-none" style={{ flex: '0 0 70%' }}>
