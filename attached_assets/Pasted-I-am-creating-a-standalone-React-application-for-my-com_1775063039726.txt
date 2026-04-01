@@ -1,0 +1,89 @@
+I am creating a standalone React application for my company's "Competitions" page. Please set up this entire project for me from scratch.
+
+Follow this exact checklist:
+
+Scaffold the Project: Ensure this is a standard React + Vite project and configure Tailwind CSS.
+
+Install Dependencies: Install lucide-react as it is required for the icons in my code.
+
+Create the Component: Create a file called src/Competitions.tsx and paste the exact React code provided at the bottom of this prompt into it.
+
+Update App: Replace the contents of src/App.tsx (or App.jsx) so that it ONLY imports and renders the <Competitions /> component. Remove any default Vite boilerplate logos or CSS that conflicts with Tailwind.
+
+Netlify Config: Create a netlify.toml file at the root of the project with standard Vite build settings (command = "npm run build", publish = "dist") so I can easily deploy this later.
+
+Run: Start the development server so I can preview the page.
+
+Here is the exact code to use for src/Competitions.tsx:
+
+TypeScript
+import React from 'react';
+import { Trophy, Medal, Award } from 'lucide-react'; 
+
+const Competitions = () => {
+  const achievements = [
+    {
+      title: "SDG OpenHack!",
+      award: "National Champions",
+      date: "October 2025",
+      description: "Recognized for innovative solutions in sustainable cooling infrastructure with Coolivate.",
+      icon: <Trophy className="w-8 h-8 text-yellow-500" />
+    },
+    {
+      title: "ASEAN China India Youth Leadership Summit",
+      award: "Singapore Grand Finalist",
+      date: "October 2025",
+      description: "Represented Singapore showcasing sustainable business development and leadership.",
+      icon: <Award className="w-8 h-8 text-blue-500" />
+    },
+    {
+      title: "Singapore x Korea Youth Impact Startup Exchange",
+      award: "3rd Place",
+      date: "2025",
+      description: "Awarded for cross-border startup impact and sustainable technology.",
+      icon: <Medal className="w-8 h-8 text-stone-400" />
+    }
+  ];
+
+  return (
+    <div className="min-h-screen bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-16">
+          <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl">
+            Competitions & Awards
+          </h1>
+          <p className="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+            A timeline of Coolivate's recognition in sustainability, innovation, and business development.
+          </p>
+        </div>
+
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {achievements.map((item, index) => (
+            <div 
+              key={index} 
+              className="bg-white rounded-2xl shadow-sm overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-100 p-8 flex flex-col items-center text-center"
+            >
+              <div className="flex items-center justify-center w-16 h-16 bg-slate-50 rounded-full mb-6">
+                {item.icon}
+              </div>
+              
+              <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
+              
+              <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-emerald-100 text-emerald-800 mb-3">
+                {item.award}
+              </span>
+              
+              <p className="text-sm text-gray-400 font-medium mb-4 uppercase tracking-wider">{item.date}</p>
+              
+              <p className="text-gray-600 leading-relaxed">
+                {item.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Competitions;
