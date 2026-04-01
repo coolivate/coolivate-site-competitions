@@ -1,0 +1,145 @@
+{
+  "colorScheme": "light",
+  "fonts": [
+    {
+      "family": "Inter",
+      "role": "body"
+    },
+    {
+      "family": "Source Code Pro",
+      "role": "monospace"
+    },
+    {
+      "family": "Nokora",
+      "role": "unknown"
+    },
+    {
+      "family": "Arial",
+      "role": "unknown"
+    },
+    {
+      "family": "Baskerville",
+      "role": "unknown"
+    }
+  ],
+  "colors": {
+    "primary": "#1EBDD7",
+    "accent": "#E9FD6E",
+    "background": "#CFCDD6",
+    "textPrimary": "#0D0630",
+    "link": "#0D0630"
+  },
+  "typography": {
+    "fontFamilies": {
+      "primary": "Inter",
+      "heading": "Inter"
+    },
+    "fontStacks": {
+      "heading": [
+        "Inter",
+        "sans-serif"
+      ],
+      "body": [
+        "Inter",
+        "sans-serif"
+      ],
+      "paragraph": [
+        "Nokora",
+        "sans-serif"
+      ]
+    },
+    "fontSizes": {
+      "h1": "48px",
+      "h2": "36px",
+      "body": "17px"
+    }
+  },
+  "spacing": {
+    "baseUnit": 4,
+    "borderRadius": "24px"
+  },
+  "components": {
+    "buttonPrimary": {
+      "background": "#1EBDD7",
+      "textColor": "#0D0630",
+      "borderColor": "#1EBDD7",
+      "borderRadius": "9999px",
+      "borderRadiusCorners": {
+        "topLeft": "9999px",
+        "topRight": "9999px",
+        "bottomRight": "9999px",
+        "bottomLeft": "9999px"
+      },
+      "shadow": "none"
+    },
+    "buttonSecondary": {
+      "background": "#E9FD6E",
+      "textColor": "#0D0630",
+      "borderColor": "#0D0630",
+      "borderRadius": "9999px",
+      "borderRadiusCorners": {
+        "topLeft": "9999px",
+        "topRight": "9999px",
+        "bottomRight": "9999px",
+        "bottomLeft": "9999px"
+      },
+      "shadow": "none"
+    }
+  },
+  "images": {
+    "logo": "https://www.coolitsystems.com/wp-content/uploads/2025/05/Logo-CoolIT-White.svg",
+    "favicon": "https://www.coolitsystems.com/wp-content/themes/coolitsystems/assets/images/Favicon.svg",
+    "ogImage": "https://www.coolitsystems.com/wp-content/uploads/2026/03/Logo-for-Social-DND.png",
+    "logoHref": "https://www.coolitsystems.com",
+    "logoAlt": "CoolIT Systems"
+  },
+  "__llm_logo_reasoning": {
+    "selectedIndex": 0,
+    "reasoning": "Selected #0 because it is visible, located in the header, links to the homepage, and matches the brand name 'CoolIT Systems'.",
+    "confidence": 0.95,
+    "source": "llm"
+  },
+  "__llm_button_reasoning": {
+    "primary": {
+      "index": 1,
+      "text": "About CoolIT Systems",
+      "reasoning": "Button #1 ('About CoolIT Systems') uses the brand's vibrant blue color (#1EBDD7) and is labeled as 'btn-primary', indicating it is a primary call-to-action."
+    },
+    "secondary": {
+      "index": 0,
+      "text": "Sign up for our newsletter",
+      "reasoning": "Button #0 ('Sign up for our newsletter') uses a different vibrant color (#E9FD6E) and serves as a secondary action, distinct from the primary blue buttons."
+    },
+    "confidence": 0.95
+  },
+  "personality": {
+    "tone": "professional",
+    "energy": "medium",
+    "targetAudience": "businesses in HPC, AI, and data centers"
+  },
+  "designSystem": {
+    "framework": "tailwind",
+    "componentLibrary": ""
+  },
+  "confidence": {
+    "buttons": 0.95,
+    "colors": 0.9,
+    "overall": 0.925
+  },
+  "__llm_metadata": {
+    "logoSelection": {
+      "llmCalled": true,
+      "llmSucceeded": true,
+      "finalSource": "llm",
+      "rawLogoSelection": {
+        "selectedLogoIndex": 0,
+        "selectedLogoReasoning": "Selected #0 because it is visible, located in the header, links to the homepage, and matches the brand name 'CoolIT Systems'.",
+        "confidence": 0.95
+      }
+    },
+    "buttonClassification": {
+      "llmCalled": true,
+      "llmSucceeded": true
+    }
+  }
+}

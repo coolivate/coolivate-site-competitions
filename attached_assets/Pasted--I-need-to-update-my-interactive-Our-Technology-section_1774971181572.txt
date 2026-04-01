@@ -1,0 +1,31 @@
+"I need to update my interactive 'Our Technology' section. The current hover boxes are blocking the battery module and the text is too dense. Please implement a Dynamic Technical Sidebar with a 'Metric-First' design:
+
+1. Layout & Non-Blocking UX
+Subject Protection: The battery module (the video) must remain 100% visible at all times.
+The Info Panel: Create a dedicated vertical 'Technical Specifications' panel on the right side of the video container (taking up ~30% of the width).
+Hover Interaction: This panel should be hidden by default. When a user hovers over a pulsing '+' icon (hotspot), the panel should smoothly slide in or fade in with the specific data for that toggle. When the mouse leaves the hotspot, the panel should vanish.
+2. Scannable 'Investor-Ready' Content
+Instead of blocks of text, format the information using bolded metrics and bullet points to ensure it is readable in under 5 seconds. Use the following data:
+
+Toggle A (Internal Core):
+HEADER: Kinetic Heat Management
+METRIC 1: +91.8% Heat Diffusion Efficiency
+METRIC 2: -18°C Peak Temp Reduction
+SUMMARY: Stabilizes internal chemistry even under extreme 10C discharge rates.
+Toggle B (Thermal Interface):
+HEADER: Thermal Equilibrium
+METRIC 1: 12x Faster Thermal Transfer
+METRIC 2: <5°C Temperature Gradient
+SUMMARY: Outperforms standard paraffin to ensure uniform cooling across all cells.
+Toggle C (External System):
+HEADER: Payload Optimization
+METRIC 1: 53.1% Gravimetric Efficiency
+METRIC 2: Zero-Leak Form Stability
+SUMMARY: Eliminates heavy enclosures, maximizing the cell-to-pack ratio for high-performance EVs.
+3. Visual Styling & Logic
+Aesthetic: Use a minimalist 'Light Mode' theme for the panel (align with the branding of the website), with emphasis on numbers.
+Hotspot Coordinates: Keep the pulsing '+' icons at the following responsive locations:
+Internal: top: 45%; left: 30%;
+Interface: top: 60%; left: 55%;
+System: top: 25%; left: 80%;
+Video Trigger: Do not show the pulsing hotspots until the video ended event or final frame is reached. Reveal them with a subtle 0.5s fade-in."

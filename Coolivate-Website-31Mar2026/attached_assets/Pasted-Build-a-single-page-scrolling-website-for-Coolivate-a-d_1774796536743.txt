@@ -1,0 +1,127 @@
+Build a single-page scrolling website for Coolivate, a deep-tech startup selling FCPCM — a passive cooling layer for hardware. The site should closely mirror the design language, layout, and scroll experience of https://www.coolitsystems.com/ — clean, premium, tech-forward. Study that site's hero section and replicate its structure and feel as closely as possible.
+
+BRAND & IDENTITY
+
+Company name: Coolivate
+Tagline: Passive. Powerful. Proven.
+Logo: Wordmark — "Coolivate" where the "i" is styled as a vertical heat dissipation bar/fin shape in teal. Use bold weight, no icon needed.
+Contact email: coolivate@gmail.com
+
+
+COLOR PALETTE (exact hex codes)
+RoleColorHexPrimary backgroundPure white#FFFFFFDark navy (nav, footer)Deep navy#0D0630Primary accentCoolIT Cyan#1DBDD7Secondary accentCanary Yellow (CTA sections)#EAFD6FBody textDeep navy#0D0630Muted textSlate#6B7A99
+
+TYPOGRAPHY
+
+Headings: Syne (Google Font) — bold, geometric, modern
+Body: DM Sans (Google Font) — clean, readable
+Hero heading font size: ~72px desktop, 40px mobile
+Nav links: 13px, uppercase, letter-spacing 0.12em
+
+
+NAVIGATION BAR
+
+Fixed/sticky dark navy bar (#0D0630), rounded pill shape (same as CoolIT Systems nav), white text
+Logo on the left
+4 nav items (smooth scroll anchors): Technology · Applications · About · Contact Us
+Hover state: cyan underline slide-in animation
+No hamburger on desktop; collapse to hamburger on mobile
+
+
+HERO SECTION (copy CoolIT Systems hero layout exactly)
+
+Full-viewport height, white background (#FFFFFF)
+Subtle animated particle/dot background (slow-drifting blue-purple dots, low opacity — exactly like CoolIT Systems)
+Centered layout:
+
+Large Coolivate logo wordmark
+Below: Tagline in cyan+navy split color: "The World's First Flexible Passive Cooling Layer"
+Two CTA pill buttons (cyan filled, #1DBDD7): "Our Technology →" and "Applications →"
+
+
+Fade-in + slight upward entrance animation on page load (staggered: logo first, then tagline, then buttons)
+
+
+SECTION 1 — TECHNOLOGY id="technology"
+Headline: What is FCPCM?
+Subheadline (cyan): Phase Change. Zero Leak. Maximum Cooling.
+3-column card layout with icons:
+IconTitleBody🔒100% Leak-ProofEncapsulated phase change material — no liquid pathways, no risk of hardware damage.⚡6× Faster CoolingAbsorbs and dissipates heat up to 6 times faster than conventional thermal interface materials.🔲Zero Air GapConforms perfectly to chip surfaces, eliminating the thermal resistance of trapped air.
+Below the cards — a Performance highlight block (dark navy #0D0630 background, white text, cyan accents):
+
+FCPCM maintains chip temperatures within safe thresholds even under sustained peak loads — outperforming traditional heat sinks and liquid cooling in form factor, safety, and longevity. Based on peer-reviewed research from Nanyang Technological University (NTU), Singapore.
+
+Animation: cards animate in on scroll with fade-up stagger.
+
+SECTION 2 — APPLICATIONS id="applications"
+Headline: Engineered for High-Density Thermal Environments
+4-card grid (icon + title + 1-line description), alternating cyan accent borders:
+
+Data Centers — Passive cooling for high-density server racks; no pumps, no maintenance
+EV Battery Packs — Thermal regulation for lithium-ion cells to extend cycle life and prevent thermal runaway
+Edge AI Devices — Keep AI inference chips cool in compact, fanless deployments
+Consumer Electronics — Thinner, quieter, cooler laptops and mobile devices
+
+Section background: very light cyan tint (#EAF9FB)
+
+SECTION 3 — ABOUT id="about"
+Split layout (text left, visual right):
+Left:
+
+About Coolivate heading
+Body: "Coolivate was founded to commercialise breakthrough passive cooling technology developed at Nanyang Technological University, Singapore. Our FCPCM (Form-stable Composite Phase Change Material) addresses the growing thermal management crisis in AI hardware, EVs, and edge computing — without the cost, complexity, or risk of liquid cooling systems."
+Tech origin badge: "Technology by Girish Kumar · NTU Singapore"
+
+Team subsection — 2 rows:
+Founders Row (3 cards, centre-aligned, circular avatar placeholder):
+
+Neha Murukesan — Chief Executive Officer
+Lim Wei Xun — Chief Operating Officer
+Lee Chun Sum — Chief Financial Officer
+
+Management & Advisory Row (5 cards, smaller):
+
+Girish Kumar (PhD, Mech. Eng.) — Lead Researcher · 5 years in Thermal and Fluid Engineering
+Prof. Shancheng Wang (PhD, Materials Science) — Technical Advisor · 8 years in Material Science & Engineering
+Rajesh Kumar (PhD, Env. Sci. & Eng.) — Commercialisation Advisor · P&G Principal Scientist · 14 years in chemical research
+Jay Teo (BSocSc, PLE) — Business Advisor · 4 years in VC & cross-border commercialisation
+Raffles Ng (MBA) — Logistics Mentor · Associate Director at HVAC Carrier
+
+(Use placeholder silhouette avatars — grey circle with person icon — for all team members)
+
+SECTION 4 — CONTACT / NEWSLETTER id="contact"
+Canary yellow background block (#EAFD6F) — full width, centered:
+Headline: "Interested in our technology?"
+Subtext: "Reach out to explore partnerships, pilots, or investment."
+CTA button (dark navy #0D0630 outlined pill): "Get in Touch →" — links to mailto:coolivate@gmail.com
+
+FOOTER
+Dark navy (#0D0630) background, white text — 3 columns:
+Col 1Col 2Col 3Coolivate logo + taglineTechnology · Applications · About · ContactLinkedIn icon · Email icon
+Bottom bar: © 2026 Coolivate · All rights reserved
+
+ANIMATIONS & INTERACTIONS
+
+Scroll reveal: All sections fade-up on scroll using Intersection Observer (no heavy libraries)
+Hover on nav links: Cyan underline slides in from left
+Hover on cards: Subtle lift (translateY(-6px)) + cyan box-shadow glow
+Hover on CTA buttons: Background darkens, slight scale-up (scale(1.03))
+Hero particles: CSS/JS animated dots, same style as coolitsystems.com — slow drift, low opacity, blue-purple tones
+Page load: Logo → tagline → buttons staggered fade-in (0.2s delays)
+
+
+TECH STACK
+
+Plain HTML + CSS + Vanilla JS (no frameworks needed)
+Google Fonts: Syne + DM Sans
+No external animation libraries — CSS keyframes + Intersection Observer only
+Fully responsive (mobile-first)
+Single index.html file
+
+
+FINAL NOTES
+
+Keep all sections visually generous — lots of whitespace, like CoolIT Systems
+Do not overcrowd with text — prioritise visuals and short punchy copy
+The overall feel should be: premium deep-tech startup, not a generic SaaS site
+When in doubt about layout, reference https://www.coolitsystems.com/ for proportion and spacing

@@ -1,0 +1,13 @@
+packages:
+  "framer-motion": "For high-performance scroll reveal animations, staggered fade-ups, and smooth transitions"
+  "clsx": "Utility for constructing className strings conditionally"
+  "tailwind-merge": "Utility function to efficiently merge Tailwind CSS classes"
+
+images:
+  - path: "artifacts/coolivate/public/images/abstract-heat.png"
+    description: "Abstract 3D render of glowing cyan and teal heat dissipation fins cooling down a microchip surface, minimal, highly polished deep tech aesthetic, bright and clean, studio lighting"
+    aspect_ratio: "1:1"
+
+notes:
+  - This is a frontend-only static landing page; no backend API connection is needed.
+  - The site uses anchor tags for native smooth scrolling between sections.

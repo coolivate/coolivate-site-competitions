@@ -1,0 +1,26 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "HP2p8vt3j6ELdBHp1DPm9"
+uri = "file://artifacts/coolivate/public/images/app-data-center.png"
+type = "image"
+title = "Server room"
+
+[[generated]]
+id = "-nJHApBYDYvXagn3KoKCx"
+uri = "file://artifacts/coolivate/public/images/app-ev-battery.png"
+type = "image"
+title = "EV Battery"
+
+[[generated]]
+id = "Ion9pa2JOyUah5PjFvUnk"
+uri = "file://artifacts/coolivate/public/images/app-bess.png"
+type = "image"
+title = "BESS"
+
+[[generated]]
+id = "rSzD40TRwdQBX1M2p4fA4"
+uri = "file://artifacts/coolivate/public/images/app-ceiling.png"
+type = "image"
+title = "Ceiling"

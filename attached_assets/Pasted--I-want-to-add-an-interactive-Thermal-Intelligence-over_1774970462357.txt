@@ -1,0 +1,37 @@
+"I want to add an interactive 'Thermal Intelligence' overlay to my battery module video component. Please implement the following features using HTML, CSS, and JavaScript:
+
+1. Interactive Hotspots (Toggles)
+
+Add three pulsing green '+' icons (hotspots) as overlays on the video container.
+
+Placement Strategy: Use absolute positioning with percentages to ensure they are responsive.
+
+Toggle A (Internal): Position at top: 45%; left: 30%; (over the internal cell stack).
+
+Toggle B (Interface): Position at top: 60%; left: 55%; (at the contact layer between cells).
+
+Toggle C (System): Position at top: 25%; left: 80%; (on the outer module casing).
+
+Visual Style: The icons should have a subtle pulse animation and a clean, high-tech B2B aesthetic.
+
+2. Tooltip Interaction
+
+When a user hovers over or clicks a hotspot, show a professional technical tooltip.
+
+Logic: Only one tooltip should be visible at a time.
+
+Content: Populate the tooltips with the following research-backed technical data:
+
+Toggle A - Heat Diffusion Maximization: "FCPCM wrapping increases heat diffusion by up to 91.8% while maintaining high latent heat. This direct-contact regulation achieves an 18°C temperature drop even under extreme 10C discharge rates."
+
+Toggle B - Module Thermal Uniformity: "Our technology enhances thermal diffusivity by up to 12 times compared to standard paraffin. It restricts temperature fluctuations to a maximum difference of only 5°C across all cells during high-load operations."
+
+Toggle C - System Payload Optimization: "Leakproof shape stability prevents material loss and eliminates the need for heavy external enclosures. This optimizes the system to achieve gravimetric and volumetric cell-to-pack ratios of 53.1% and 45.6%, respectively."
+
+3. Video Integration Logic (Pro-Tip Implementation)
+
+State Management: The hotspots should be hidden while the video is playing.
+
+Trigger: Use JavaScript to detect when the video reaches its final frame or the ended event occurs. At that point, use a CSS fade-in effect (0.5s duration) to reveal the three hotspots.
+
+Responsiveness: Ensure the overlay container perfectly matches the video's aspect ratio so the coordinates remain accurate across all screen sizes."
