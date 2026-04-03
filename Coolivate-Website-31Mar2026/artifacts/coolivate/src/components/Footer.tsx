@@ -55,9 +55,19 @@ export function Footer() {
                 <Linkedin size={20} />
               </a>
             </div>
-            <p className="mt-6 text-sm">
-              <a href="mailto:coolivate@gmail.com" className="hover:text-white transition-colors">coolivate@gmail.com</a>
-            </p>
+
+            <div className="mt-6 space-y-2 text-sm">
+              <p>
+                <a href="mailto:coolivate@gmail.com" className="hover:text-white transition-colors">
+                  coolivate@gmail.com
+                </a>
+              </p>
+              <p>
+                <a href="tel:+6587330611" className="hover:text-white transition-colors">
+                  +65 8733 0611
+                </a>
+              </p>
+            </div>
           </div>
           
         </div>
