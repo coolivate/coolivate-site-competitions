@@ -1,14 +1,12 @@
 [build]
-  # This tells Netlify to go into your project folder
-  base = "Coolivate-Website-31Mar2026"
-  
-  # This runs the build command (the || true hack handles the tooltip error)
-  command = "pnpm install && pnpm build || true"
-  
-  # This points to the final files inside that folder
+  base    = "Coolivate-Website-31Mar2026"
+  command = "pnpm install && pnpm --filter @workspace/coolivate run build"
   publish = "artifacts/coolivate/dist"
 
+[build.environment]
+  NODE_VERSION = "20"
+
 [[redirects]]
-  from = "/competitions/*"
-  to = "/competitions/index.html"
+  from   = "/*"
+  to     = "/index.html"
   status = 200
