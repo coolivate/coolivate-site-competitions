@@ -3,6 +3,20 @@ import { Trophy, Medal, Award } from 'lucide-react';
 
 const achievements = [
   {
+    title: "Oxford University Innovation Pitch",
+    award: "NTU Top 3",
+    date: "March 2026",
+    description: "Showcasing scalable solutions to global investors.",
+    icon: <Trophy className="w-8 h-8 text-yellow-500" />,
+  },
+  {
+    title: "NUS Women in Business x BLOCK 71",
+    award: "1st Place",
+    date: "March 2026",
+    description: "Greenlane to Pitch for Incubation at BLOCK71 - THE HANGAR",
+    icon: <Trophy className="w-8 h-8 text-yellow-500" />,
+  },
+  {
     title: "SDG OpenHack!",
     award: "National Champions",
     date: "October 2025",
