@@ -5,7 +5,11 @@ import { cn } from '@/lib/utils';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'wouter';
 
-export function Navbar() {
+interface NavbarProps {
+  showAwards?: boolean;
+}
+
+export function Navbar({ showAwards = false }: NavbarProps) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -21,6 +25,7 @@ export function Navbar() {
     { name: 'Technology', href: '#technology' },
     { name: 'Applications', href: '#applications' },
     { name: 'About', href: '#about' },
+    ...(showAwards ? [{ name: 'Awards', href: '/competitions', isRoute: true }] : []),
     { name: 'Contact Us', href: '#contact' },
   ];
 
