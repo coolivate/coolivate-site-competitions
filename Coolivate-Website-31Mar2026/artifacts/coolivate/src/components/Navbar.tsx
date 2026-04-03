@@ -25,7 +25,7 @@ export function Navbar({ showAwards = false }: NavbarProps) {
     { name: 'Technology', href: '#technology' },
     { name: 'Applications', href: '#applications' },
     { name: 'About', href: '#about' },
-    ...(showAwards ? [{ name: 'Awards', href: '/competitions', isRoute: true }] : []),
+    ...(showAwards ? [{ name: 'Awards', href: '#awards' }] : []),
     { name: 'Contact Us', href: '#contact' },
   ];
 
