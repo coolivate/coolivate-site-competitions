@@ -5,38 +5,39 @@ const achievements = [
   {
     title: "Oxford University Innovation Pitch",
     award: "NTU Top 3",
-    date: "March 2026",
-    description: "Showcasing scalable solutions to global investors.",
+    date: "Mar 2026",
+    description: "Showcasing scalable solutions to global investors",
     icon: <Trophy className="w-8 h-8 text-yellow-500" />,
   },
   {
     title: "NUS Women in Business x BLOCK 71",
     award: "1st Place",
-    date: "March 2026",
+    date: "Mar 2026",
     description: "Greenlane to Pitch for Incubation at BLOCK71 - THE HANGAR",
     icon: <Trophy className="w-8 h-8 text-yellow-500" />,
   },
   {
+    title: "Singapore x Korea Youth Impact Startup Exchange",
+    award: "3rd Place",
+    date: "Jan 2026",
+    description: "Awarded for cross-border startup impact and sustainable technology",
+    icon: <Medal className="w-8 h-8 text-stone-400" />,
+  },
+  {
     title: "SDG OpenHack!",
-    award: "National Champions",
-    date: "October 2025",
-    description: "Recognized for innovative solutions in sustainable cooling infrastructure with Coolivate.",
+    award: "National Champion",
+    date: "Oct 2025",
+    description: "Selected to represent Singapore in 2026 SDG Olympiad Geneva",
     icon: <Trophy className="w-8 h-8 text-yellow-500" />,
   },
   {
-    title: "ASEAN China India Youth Leadership Summit",
+    title: "ASEAN-China-India Youth Leadership Summit",
     award: "Singapore Grand Finalist",
-    date: "October 2025",
-    description: "Represented Singapore showcasing sustainable business development and leadership.",
+    date: "Oct 2025",
+    description: "Represented Singapore and leading regional sustainable ideas",
     icon: <Award className="w-8 h-8 text-blue-500" />,
   },
-  {
-    title: "Singapore x Korea Youth Impact Startup Exchange",
-    award: "3rd Place",
-    date: "2025",
-    description: "Awarded for cross-border startup impact and sustainable technology.",
-    icon: <Medal className="w-8 h-8 text-stone-400" />,
-  },
+  
 ];
 
 export function AwardsSection() {
