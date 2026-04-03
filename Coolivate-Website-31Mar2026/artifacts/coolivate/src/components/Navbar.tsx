@@ -21,7 +21,6 @@ export function Navbar() {
     { name: 'Technology', href: '#technology' },
     { name: 'Applications', href: '#applications' },
     { name: 'About', href: '#about' },
-    { name: 'Awards', href: '/competitions', isRoute: true },
     { name: 'Contact Us', href: '#contact' },
   ];
 
